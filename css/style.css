@@ -1,0 +1,90 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+.main {
+  width: 100%;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.container {
+  width: 1200px;
+  height: 700px;
+  background-color: #ffffff;
+  box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+  display: flex;
+  overflow: hidden;
+}
+
+.content-login,
+.content-cadastrar {
+  width: 50%;
+  height: 100%;
+  position: relative;
+}
+
+.form-login,
+.form-cadastrar {
+  width: 100%;
+  height: 100%;
+  padding: 30px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 20px;
+  transition: all 900ms;
+  z-index: 10;
+  position: relative;
+}
+
+.form-cadastrar {
+    transform: translateX(100%);
+}
+
+.div {
+  width: 400px;
+  height: 50px;
+  border-radius: 15px;
+  background-color: aliceblue;
+  border: 1px solid black;
+}
+
+.div a {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.content-0, .content-1{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 50px;
+}
+
+.content-0 {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background-color: rgb(135, 26, 185);
+    transition: all 900ms;
+    transform: translateX(-100%);
+}
+
+.content-1 {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background-color: rgb(135, 26, 185);
+    transition: all 900ms;
+}

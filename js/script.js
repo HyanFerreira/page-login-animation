@@ -9,16 +9,24 @@ btnLogin.addEventListener('click', (e) => {
     e.preventDefault();
     
     contentCadastrar.style.transform = "translateY(0)";
+    contentCadastrar.style.opacity = "1";
     content1.style.transform = "translateX(100%)";
-    contentLogin.style.transform = "translateX(-100%)";
+    // content1.style.opacity = "0";
+    contentLogin.style.transform = "translateY(100%)";
+    contentLogin.style.opacity = "0";
     content0.style.transform = "translateX(0)";
+    // content0.style.opacity = "1";
 });
 
 btnCadastrar.addEventListener('click', (e) => {
     e.preventDefault();
 
-    contentCadastrar.style.transform = "translateX(100%)";
+    contentCadastrar.style.transform = "translateY(100%)";
+    contentCadastrar.style.opacity = "0";
     content1.style.transform = "translateX(0)";
+    // content1.style.opacity = "1";
     contentLogin.style.transform = "translateX(0)";
+    contentLogin.style.opacity = "1";
     content0.style.transform = "translateX(-100%)";
+    // content0.style.opacity = "0";
 });
